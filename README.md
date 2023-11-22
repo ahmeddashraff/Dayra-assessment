@@ -104,7 +104,7 @@ php artisan queue:work
 **Request Body:** None
 
 **Response:**<br>
-- Status: 200 OK
+- Status: 200 OK <br>
 ```json
 "notes": [
         {
@@ -120,7 +120,7 @@ php artisan queue:work
             "user_id": 1
         }
     ]
-    ```
+```
 - Status: 401 (unauthenticated)
 
 #### 2. Get Note By ID
@@ -140,7 +140,7 @@ php artisan queue:work
         "content": "hello world",
         "user_id": 1
     }
-    ```
+```
 - Status: 401 (unauthenticated)
 
 #### 3. Create Note
