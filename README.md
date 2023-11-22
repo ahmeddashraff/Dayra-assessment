@@ -1,6 +1,7 @@
 # Dayra-assessment
 
 
+
 ## API Reference
 
 ### User Authentication Microservice:
@@ -38,7 +39,7 @@
 **URL:** /api/authorize<br>
 **Method:** GET<br>
 **Headers:** <br>
-Authorization : <access_token> <br>
+- Authorization: <access_token> <br>
 **Request Body:** None
 
 **Response:**<br>
@@ -52,7 +53,7 @@ Authorization : <access_token> <br>
 **URL:** /api/notes<br>
 **Method:** GET<br>
 **Headers:** <br>
-Authorization : <access_token> <br>
+- Authorization: <access_token> <br>
 **Request Body:** None
 
 **Response:**<br>
@@ -63,7 +64,7 @@ Authorization : <access_token> <br>
 **URL:** /api/notes/{id}<br>
 **Method:** GET<br>
 **Headers:** <br>
-Authorization : <access_token> <br>
+- Authorization: <access_token> <br>
 **Request Body:** None
 
 **Response:**<br>
@@ -74,7 +75,7 @@ Authorization : <access_token> <br>
 **URL:** /api/notes/{id}<br>
 **Method:** GET<br>
 **Headers:** <br>
-Authorization : <access_token> <br>
+- Authorization: <access_token> <br>
 **Request Body:**
 ```json
 {
@@ -91,7 +92,7 @@ Authorization : <access_token> <br>
 **URL:** /api/notes/{id}<br>
 **Method:** PUT<br>
 **Headers:** <br>
-Authorization : <access_token> <br>
+- Authorization: <access_token> <br>
 **Request Body:**
 ```json
 {
@@ -108,7 +109,7 @@ Authorization : <access_token> <br>
 **URL:** /api/notes/{id}<br>
 **Method:** DELETE<br>
 **Headers:** <br>
-Authorization : <access_token> <br>
+- Authorization: <access_token> <br>
 **Request Body:** None
 **Response:**<br>
 - Status: 200 OK
