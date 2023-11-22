@@ -1,5 +1,18 @@
 # Dayra-assessment
 
+## How to setup and run the project
+First, run the composer install:
+```
+composer install
+```
+then, run each User Authentication microservice in port 8000, and the other run it in any different port:
+```
+php artisan serve --port= PORT_NUMBER
+```
+then run queue in each microservice:
+```
+php artisan queue:work
+```
 
 
 
@@ -84,7 +97,7 @@
 **Method:** GET<br>
 **Headers:** <br>
 - Authorization: <access_token> <br>
-<br> **Request Body:** None
+**Request Body:** None
 
 **Response:**<br>
 - Status: 200 OK
@@ -131,7 +144,7 @@
 **Method:** GET<br>
 **Headers:** <br>
 - Authorization: <access_token> <br>
-<br>**Request Body:**
+**Request Body:**
 ```json
 {
     "title":"pizza recipe",
@@ -181,7 +194,7 @@
 **Method:** DELETE<br>
 **Headers:** <br>
 - Authorization: <access_token> <br>
-<br>**Request Body:** None
+**Request Body:** None
 **Response:**<br>
 - Status: 200 OK
 ```json
