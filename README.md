@@ -70,7 +70,7 @@
 **Method:** GET<br>
 **Headers:** <br>
 - Authorization: <access_token> <br>
-<br> **Request Body:** None
+**Request Body:** None
 
 **Response:**<br>
 - Status: 200 OK (If correct)
