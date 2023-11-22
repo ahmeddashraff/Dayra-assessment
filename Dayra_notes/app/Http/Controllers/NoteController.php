@@ -27,6 +27,11 @@ class NoteController extends Controller
 
     public function createNote(Request $request)
     {
+        $validatedData = $request->validate([
+            'title' => 'required|string|max:64',
+            'content' => 'required|string|max:1024',
+        ]);
+
         $note = Note::create([
             'title' => $request->input('title'),
             'content' => $request->input('content'),
@@ -44,10 +49,19 @@ class NoteController extends Controller
             return response()->json(['error' => 'Note not found'], 404);
         }
 
-        $note->update([
-            'title' => $request->input('title'),
-            'content' => $request->input('content'),
-        ]);
+        $updateData = [];
+
+        // Check if 'title' is present in the request before updating it
+        if ($request->filled('title')) {
+            $updateData['title'] = $request->input('title');
+        }
+
+        // Check if 'content' is present in the request before updating it
+        if ($request->filled('content')) {
+            $updateData['content'] = $request->input('content');
+        }
+
+        $note->update($updateData);
 
         return response()->json(['note' => $note]);
     }
