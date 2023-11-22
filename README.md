@@ -70,7 +70,7 @@
 **Method:** GET<br>
 **Headers:** <br>
 - Authorization: <access_token> <br>
-**Request Body:** None
+<br> **Request Body:** None
 
 **Response:**<br>
 - Status: 200 OK (If correct)
@@ -84,7 +84,7 @@
 **Method:** GET<br>
 **Headers:** <br>
 - Authorization: <access_token> <br>
-**Request Body:** None
+<br> **Request Body:** None
 
 **Response:**<br>
 - Status: 200 OK
@@ -131,7 +131,7 @@
 **Method:** GET<br>
 **Headers:** <br>
 - Authorization: <access_token> <br>
-**Request Body:**
+<br>**Request Body:**
 ```json
 {
     "title":"pizza recipe",
@@ -181,7 +181,7 @@
 **Method:** DELETE<br>
 **Headers:** <br>
 - Authorization: <access_token> <br>
-**Request Body:** None
+<br>**Request Body:** None
 **Response:**<br>
 - Status: 200 OK
 ```json
