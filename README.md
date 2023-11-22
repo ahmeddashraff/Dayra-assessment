@@ -1,5 +1,9 @@
 # Dayra-assessment
 
+## how the microservices communicate via the message broker
+
+Microservices communicate by sending and receiving messages through a message broker. In the scenario I used, when a user registers in the User Authentication microservice, a message is sent to RabbitMQ. The Note Management microservice, subscribed to this event, receives the message and creates a default note for the registered user. This asynchronous communication ensures decoupling and independent functionality between microservices.
+
 ## How to setup and run the project
 First, run the composer install:
 ```
